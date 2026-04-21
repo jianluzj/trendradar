@@ -168,3 +168,7 @@ jobs:
           S3_REGION: ${{ secrets.S3_REGION }}
           GITHUB_ACTIONS: true
         run: uv run python -m trendradar
+        git config --global user.name "jianluzj"
+        git config --global user.email "jianluzj@gmail.com"
+        git add index.html
+        git commit -m "Update latest trendradar"
